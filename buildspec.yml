@@ -18,14 +18,9 @@ phases:
       
   post_build:
     commands:
-      - echo "Uploading deployment package to S3..."
+      - echo "Uploading to S3..."
       - aws s3 cp deployment_package.zip s3://lambdagithubdoordash-zip/
-      - echo "Deployment package uploaded to S3."
-      
-      - echo "Extracting JSON file from deployment package..."
-      - unzip -o deployment_package.zip 2024-03-09-raw_input.json -d .
-      - echo "JSON file extracted."
-      
-      - echo "Uploading JSON file to S3 bucket 'doordash-landing-zn'..."
-      - aws s3 cp 2024-03-09-raw_input.json s3://doordash-landing-zn/
-      - echo "JSON file uploaded to S3 bucket 'doordash-landing-zn'."
+      - echo "Updating Lambda function via S3..."
+      - aws lambda update-function-code --function-name github-to-lambda-cicd-doordash --s3-bucket lambdagithubdoordash-zip --s3-key deployment_package.zip
+      - echo "Deployment complete"
+
