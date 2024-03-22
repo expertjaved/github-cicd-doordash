@@ -19,7 +19,7 @@ phases:
   post_build:
     commands:
       - echo "Uploading deployment package to S3..."
-      - aws s3 cp deployment_package.zip s3://lambdabuildgithubdoordashlanding-zip/
+      - aws s3 cp deployment_package.zip s3://lambdagithubdoordash-zip/
       - echo "Deployment package uploaded to S3."
       
       - echo "Extracting JSON file from deployment package..."
