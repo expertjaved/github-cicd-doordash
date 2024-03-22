@@ -1,0 +1,13 @@
+[
+    {"id": 1, "status": "delivered", "amount": 20.5, "date": "2024-03-09"},
+    {"id": 2, "status": "cancelled", "amount": 15.0, "date": "2024-03-09"},
+    {"id": 3, "status": "order placed", "amount": 22.5, "date": "2024-03-09"},
+    {"id": 4, "status": "delivered", "amount": 19.5, "date": "2024-03-09"},
+    {"id": 5, "status": "cancelled", "amount": 18.0, "date": "2024-03-09"},
+    {"id": 6, "status": "delivered", "amount": 23.5, "date": "2024-03-09"},
+    {"id": 7, "status": "order placed", "amount": 20.0, "date": "2024-03-09"},
+    {"id": 8, "status": "delivered", "amount": 25.5, "date": "2024-03-09"},
+    {"id": 9, "status": "delivered", "amount": 21.5, "date": "2024-03-09"},
+    {"id": 10, "status": "cancelled", "amount": 17.5, "date": "2024-03-09"}
+  ]
+  
